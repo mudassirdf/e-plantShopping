@@ -17,13 +17,11 @@ body {
 
 .cart-badge {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  background-color: red;
+  top: 15px;
+  right: 18px;
   color: white;
-  border-radius: 50%;
   padding: 3px 7px;
-  font-size: 12px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -195,16 +193,19 @@ body {
    justify-content: center;
     /* background-color: yellow; */
 }
-.plant_heading{
-    width: 400px;
+.plant_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 20px;
+    margin: 20px auto;
     border: 1px solid rgb(5, 4, 4);
     border-left: none;
     border-right: none;
-
-    
+    width: fit-content;
+    padding: 5px 10px;
 }
+
 /* Add Media Query for responsiveness */
 @media (max-width: 768px) {
     .product-card {
@@ -234,6 +235,7 @@ body {
   
   .product-button.added-to-cart {
     background-color: grey; /* Grey when product is added */
+    cursor: not-allowed;
   }
   @media (max-width: 1200px) {
     .product-card {
